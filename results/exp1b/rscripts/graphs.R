@@ -1,5 +1,6 @@
 # set working directory, e.g.
 # setwd('/Users/judith/projection-NAI-variability/results/exp1b/')
+setwd('/Users/tonhauser.1/Documents/current-research-topics/NSF-NAI/prop-att-experiments/1factive-verbs/how-projective/results/exp1b/')
 setwd("")
 
 # load required packages
@@ -107,4 +108,20 @@ ggplot(t, aes(x=trigger_ai, y=ai)) +
   ylab("Not-at-issueness rating \n ('asking whether')")+
   xlab("Expression")
 ggsave(f="graphs/boxplot-not-at-issueness-with-MCs.pdf",height=3,width=10)
+
+# paper figure B (by-item projectivity against at-issueness ratings)
+head(t_nomc)
+t_nomc$Item = as.factor(paste(t_nomc$short_trigger, t_nomc$content))
+ggplot(t_nomc, aes(x=ai,y=projective,color=Trigger)) +
+  geom_smooth(method="lm") +
+  geom_point() +
+  scale_color_discrete(name="Target expression") +
+  xlab("Not-at-issueness rating") +
+  ylab("Projectivity rating") +
+  xlim(0,1) +
+  ylim(0,1) +
+  facet_wrap(~Item) +
+  theme(legend.position="top") +
+  guides(colour = guide_legend(nrow = 1))
+ggsave("graphs/subject-variability-aiproj-exp1b.pdf",width=20,height=25)
 

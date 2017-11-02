@@ -130,7 +130,7 @@ ggplot(t, aes(x=trigger_ai, y=ai)) +
   xlab("Expression")
 ggsave(f="graphs/boxplot-not-at-issueness-with-MCs.pdf",height=3,width=6.5)
 
-# paper figure 12 (by-item projectivity against at-issueness ratings)
+# paper figure A1 (by-item projectivity against at-issueness ratings)
 ggplot(t_nomc, aes(x=ai,y=projective,color=Trigger)) +
   geom_smooth(method="lm") +
   geom_point() +
