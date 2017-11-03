@@ -10,4 +10,4 @@ The directory `paper` contains the files used to generate the paper.
 
 The directory `results` contains the (anonymized) data from all four experiments as well as the R scripts used for analysis and visualization. Note: what is referred to as a "trigger" in these files corresponds to what is referred to by "target expression" in the paper (see footnote 1 in the paper).
 
-Figure B (by-item ratings) can be found in results/exp1b/graphs/.
+Figure B (by-item ratings in Exp 1b) can be found in results/exp1b/graphs/.
