@@ -1,6 +1,5 @@
 # set working directory, e.g.
-# setwd('/Users/judith/projection-NAI-variability/results/exp1b/')
-setwd('/Users/tonhauser.1/Documents/current-research-topics/NSF-NAI/prop-att-experiments/1factive-verbs/how-projective/results/exp1b/')
+# setwd('/Users/judith/how-projective/results/exp1b/')
 setwd("")
 
 # load required packages

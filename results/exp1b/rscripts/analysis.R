@@ -1,5 +1,5 @@
 # set working directory, e.g.
-# setwd('/Users/judith/projection-NAI-variability/results/exp1b/')
+# setwd('/Users/judith/how-projective/results/exp1b/')
 setwd("")
 
 # load required packages
