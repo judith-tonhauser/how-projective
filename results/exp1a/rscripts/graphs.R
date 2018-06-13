@@ -36,6 +36,7 @@ ggplot(t, aes(x=trigger_proj, y=projective)) +
   ylab("Projectivity rating")+
   xlab("Expression")
 ggsave(f="graphs/boxplot-projection-with-MCs.pdf",height=3,width=6.5)
+ggsave(f="graphs/boxplot-projection-with-MCs.png",height=3,width=6.5)
 
 # paper figure 2b (by-subject projectivity means)
 t.proj <- droplevels(subset(t,t$short_trigger != "MC"))
@@ -58,6 +59,7 @@ ggplot(variances, aes(x=reorder(workerid,ProjMean),y=ProjMean)) +
   xlab("Participant") +
   ylab("Mean projectivity rating")
 ggsave("graphs/projection-subjectmeans.pdf",height=3,width=6.5)
+ggsave("graphs/projection-subjectmeans.png",height=3,width=6.5)
 
 
 # exclude main clauses (fillers)

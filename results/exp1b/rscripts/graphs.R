@@ -59,6 +59,7 @@ ggplot(variances, aes(x=reorder(workerid,ProjMean),y=ProjMean)) +
   xlab("Participant") +
   ylab("Mean projectivity rating")
 ggsave("graphs/projection-subjectmeans.pdf",height=3,width=10)
+ggsave("graphs/projection-subjectmeans.png",height=3,width=10)
 
 
 # exclude main clauses (fillers)
