@@ -1,18 +1,16 @@
-# set working directory, e.g.
-# setwd('/Users/judith/how-projective/results/exp2a/')
-setwd("")
+# set working directory to point to 'rscripts' (default when opening file in RStudio)
 
 # load required packages
 require(tidyverse)
 
 # load helper functions
-source('../helpers.R')
+source('../../helpers.R')
 
 # set black and white plot background
 theme_set(theme_bw())
 
 # load data
-t = read.csv("data/data_preprocessed.csv")
+t = read.csv("../data/data_preprocessed.csv")
 
 # aggregate responses by trigger for merging in means from exp 1a to plot
 tagr = t %>%

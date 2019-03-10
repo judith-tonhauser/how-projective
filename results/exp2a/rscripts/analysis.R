@@ -1,6 +1,4 @@
-# set working directory, e.g.
-# setwd('/Users/judith/how-projective/results/exp2a/')
-setwd("")
+# set working directory to point to 'rscripts' (default when opening file in RStudio)
 
 # load required packages
 require(tidyverse)
@@ -9,10 +7,10 @@ library(simr)
 library(lmerTest)
 
 # load helper functions
-source('../helpers.R')
+source('../../helpers.R')
 
 # load data
-t = read.csv("data/data_preprocessed.csv")
+t = read.csv("../data/data_preprocessed.csv")
 
 # aggregate responses by trigger and content for merging in means from exp 1a to run regression analysis
 tagr = t %>%

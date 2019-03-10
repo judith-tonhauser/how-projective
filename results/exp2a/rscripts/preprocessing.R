@@ -1,15 +1,13 @@
-# set working directory, e.g.
-# setwd('/Users/judith/how-projective/results/exp2a/')
-setwd("")
+# set working directory to point to 'rscripts' (default when opening file in RStudio)
 
 # load required packages
 require(tidyverse)
 
 # load helper functions
-source('../helpers.R')
+source('../../helpers.R')
 
 # read in the rawdata
-d = readRDS(file="data/d.rds")
+d = readRDS(file="../data/d.rds")
 
 # look at Turkers' comments
 unique(d$comments)
