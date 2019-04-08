@@ -7,7 +7,7 @@ source('../../helpers.R')
 require(tidyverse)
 
 # read in the raw data
-d = readRDS(file="../data/d.rds")
+d = read_csv(file="../data/experiment.csv")
 
 # look at Turkers' comments
 unique(d$comments)
@@ -50,11 +50,11 @@ length(unique(d$workerid)) #243 (data from 7 Turker excluded, 243 remaining Turk
 
 # exclude non-American English speakers
 length(unique(d$workerid))#243
-length(which(is.na(d$ame))) #0 (everybody responded)
-table(d$ame) 
+length(which(is.na(d$american))) #0 (everybody responded)
+table(d$american) 
 # No  Yes 
 # 660 6630
-d <- subset(d, d$ame == "Yes")
+d <- subset(d, d$american == "Yes")
 d = droplevels(d)
 length(unique(d$workerid)) #221 (data from 22 Turkers excluded, 221 remaining Turkers)
 
@@ -120,4 +120,4 @@ d <- droplevels(d)
 length(unique(d$workerid)) # 210 remaining Turkers (11 Turkers excluded)
 
 # write cleaned dataset to file
-write.csv(d[,c(1,2,3,4,5,6,7,8,9,12,51)], file="data/data_preprocessed.csv",row.names=F,quote=F)
+write.csv(d[,c(1,2,3,4,5,6,7,8,9,12,51)], file="../data/data_preprocessed.csv",row.names=F,quote=F)

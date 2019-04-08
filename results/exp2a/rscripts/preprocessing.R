@@ -7,7 +7,7 @@ require(tidyverse)
 source('../../helpers.R')
 
 # read in the rawdata
-d = readRDS(file="../data/d.rds")
+d = read.csv(file="../data/experiment.csv")
 
 # look at Turkers' comments
 unique(d$comments)
@@ -96,4 +96,4 @@ d <- droplevels(d)
 length(unique(d$workerid)) #238 remaining Turkers, 6 excluded
 
 # write cleaned dataset to file
-write.csv(d[,c(1,2,3,4,5,6,7,8,9,11,50)], file="data/data_preprocessed.csv",row.names=F,quote=F)
+write.csv(d[,c(1,2,3,4,5,6,7,8,9,11,50)], file="../data/data_preprocessed.csv",row.names=F,quote=F)
