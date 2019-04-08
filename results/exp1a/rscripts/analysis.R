@@ -1,6 +1,4 @@
-# set working directory, e.g.
-# setwd('/Users/judith/how-projective/results/exp1a/')
-setwd("")
+# set working directory to point to 'rscripts' (default when opening file in RStudio)
 
 # load required packages
 require(tidyverse)
@@ -10,9 +8,9 @@ library(lme4)
 library(lmerTest)
 
 # load helper functions
-source('../helpers.R')
+source('../../helpers.R')
 
-d = read.csv("data/data_preprocessed.csv")
+d = read.csv("../data/data_preprocessed.csv")
 
 # spread responses over separate columns for projectivity and at-issueness
 t = d %>%

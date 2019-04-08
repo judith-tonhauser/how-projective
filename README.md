@@ -2,7 +2,7 @@
 
 This is the repository that accompanies the paper
 
-"How projective is projective content? Gradience in projectivity and at-issueness", Judith Tonhauser, David I. Beaver, and Judith Degen. (ms) Under review with Journal of Semantics.
+"How projective is projective content? Gradience in projectivity and at-issueness", Judith Tonhauser, David I. Beaver, and Judith Degen (2018). *Journal of Semantics*, 35(3), pp. 495-542.
 
 The directory `experiments` contains the experimental files used to run Exps 1a, 1b, 2a, and 2b.
 
