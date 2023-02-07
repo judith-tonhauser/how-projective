@@ -17,4 +17,6 @@ The directory `paper` contains the files used to generate the Journal of Semanti
 
 The directory `results` contains the (anonymized) data from all four experiments as well as the R scripts used for analysis and visualization. Note: what is referred to as a "trigger" in these files corresponds to what is referred to by "target expression" in the paper (see footnote 1 in the paper).
 
+The directly `pilots' contains the pilots for at-issueness and projection referenced in footnote 8 of the Journal of Semantics paper.
+
 
