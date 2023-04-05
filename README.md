@@ -1,12 +1,10 @@
 # How projective is projective content? Gradience in projectivity and at-issueness
 
-This is the repository that accompanies the paper
+This is the repository that accompanies the following paper and data management use case (DMUC) chapter:
 
-"How projective is projective content? Gradience in projectivity and at-issueness", Judith Tonhauser, David I. Beaver, and Judith Degen (2018). *Journal of Semantics*, 35(3), pp. 495-542.
+- Tonhauser, Judith, Beaver, David I., and Degen, Judith (2018). How projective is projective content? Gradience in projectivity and at-issueness,  *Journal of Semantics*, 35(3), pp. 495-542.
 
-and the Data Management Use Case (DMUC)
-
-"Managing data for experimental semantics and pragmatics", Judith Degen and Judith Tonhauser (under review).
+- Tonhauser, Judith, Beaver, David I., and Degen, Judith (2022). Managing web experiments for psycholinguistics: An example from experimental semantics/pragmatics. In *A. Berez-Kroeker, B. McDonnell, E. Koller, and L. Collister(Eds.). Open Handbook of Linguistic Data Management*, pp. 539-546, The MIT Press. doi: 10.7551/mitpress/12200.001.0001.
 
 
 The directory `dmuc` contains the DMUC paper. 
